@@ -34,18 +34,22 @@
 
     @include font-input-bold;
 
-    &::placeholder {
-      @include font-placeholder-bold;
-
-      padding-left: 0;
-    }
+    transition: scale 0.3s ease-in-out, border 0.3s ease-in-out,
+      caret-color 0.3s ease-in-out;
 
     &:focus,
     &:hover,
     &:active {
       outline: none;
+      scale: 1.1;
       border: 1px solid $clr-primary-purple;
       caret-color: $clr-primary-purple;
+    }
+
+    &::placeholder {
+      @include font-placeholder-bold;
+
+      padding-left: 0;
     }
   }
 }

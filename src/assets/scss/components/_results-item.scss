@@ -10,5 +10,11 @@
     margin-right: 0.3rem;
 
     @include font-results-answer-bold;
+
+    transition: font-size 0.3s ease-in-out;
+
+    &:hover {
+      font-size: 13vw;
+    }
   }
 }

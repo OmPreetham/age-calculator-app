@@ -1,6 +1,9 @@
 @use '../abstracts/variables' as *;
 
-@mixin button() {
+@mixin button(
+  $bg-color: $clr-primary-purple,
+  $bg-color-focus: $clr-neutral-off-black
+) {
   position: absolute;
   right: 0;
   bottom: -95px;
@@ -10,16 +13,17 @@
 
   padding: 1.5rem;
 
-  background-color: $clr-primary-purple;
+  background-color: $bg-color;
+
+  outline: transparent;
 
   cursor: pointer;
 
   transition: scale 0.5s ease-in-out, background-color 0.5s ease-in-out;
 
   &:focus,
-  &:active,
   &:hover {
     scale: 1.1;
-    background-color: $clr-neutral-off-black;
+    background-color: $bg-color-focus;
   }
 }
