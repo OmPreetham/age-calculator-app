@@ -52,4 +52,18 @@
       padding-left: 0;
     }
   }
+
+  // Error States
+
+  .input-error {
+    border: 1px solid $clr-primary-light-red;
+  }
+
+  .label-error {
+    color: $clr-primary-light-red;
+  }
+
+  .error-message {
+    @include font-error-message-bold;
+  }
 }

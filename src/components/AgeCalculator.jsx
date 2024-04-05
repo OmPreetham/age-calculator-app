@@ -17,6 +17,7 @@ const AgeCalculator = () => {
               name="day"
               placeholder="dd"
             />
+            <p className="error-message">This feild is required</p>
           </article>
           <article className="form__item">
             <label className="item__label" htmlFor="month">
@@ -32,6 +33,7 @@ const AgeCalculator = () => {
               name="month"
               placeholder="mm"
             />
+            <p className="error-message">This feild is required</p>
           </article>
           <article className="form__item">
             <label className="item__label" htmlFor="year">
@@ -47,6 +49,7 @@ const AgeCalculator = () => {
               name="year"
               placeholder="yyyy"
             />
+            <p className="error-message">This feild is required</p>
           </article>
           <button type="button">
             <img

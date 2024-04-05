@@ -44,6 +44,17 @@
   color: $clr-neutral-smokey-grey;
 }
 
+@mixin font-error-message-bold {
+  font-family: $ff-poppins;
+  font-style: italic;
+  font-weight: $fw-400;
+  font-size: $fs-error;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $clr-primary-light-red;
+}
+
 @mixin font-results-item-bold {
   font-family: $ff-poppins;
   font-style: italic;
