@@ -17,17 +17,35 @@ $clr-neutral-off-black: hsl(0, 0%, 8%);
 
 // Font Sizes
 
-$ff-poppins: 2rem;
+$ff-poppins: 'Poppins', sans-serif;
 
 // Font Sizes
 
-$fs-input: 2rem;
+$fs-root: 1rem;
+$fs-label: clamp(0.5rem, 0.6rem + 0.5vw, 1rem);
+$fs-input: clamp(1rem, 0.6rem + 2vw, 2rem);
+$fs-placeholder: clamp(1rem, 0.6rem + 2vw, 2rem);
+$fs-results-item: clamp(1rem, 1.6rem + 4.5vw, 6.5rem);
 
 // Font Weights
 
 $fw-400: 400;
 $fw-700: 700;
 $fw-800: 800;
+
+// Line Heights
+
+$lh-label: 1;
+$lh-input: 1;
+$lh-placeholder: 1;
+$lh-results-item: 1;
+
+// Letter Spacing
+
+$ls-label: 0.2rem;
+$ls-input: 0.1rem;
+$ls-placeholder: 0.05rem;
+$ls-results-item: 0.05rem;
 
 // Widths
 

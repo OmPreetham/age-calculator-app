@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as *;
+
+html {
+  font-family: $ff-poppins;
+  font-size: $fs-root;
+}
+
+body {
+  max-width: $max-width-root;
+  min-width: $min-width-root;
+  min-height: $min-height-root;
+
+  margin-inline: auto;
+
+  background-color: $clr-neutral-off-white;
+
+  #root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,59 @@
+@use '../abstracts/variables' as *;
+@use '../core/topography' as *;
+@use '../components/form-item' as *;
+@use '../components/button' as *;
+
+.form-wrapper {
+  padding-bottom: 3em;
+
+  border-bottom: 2px solid $clr-neutral-off-white;
+
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+
+    &__item {
+      @include form-item;
+    }
+
+    position: relative;
+
+    button {
+      @include button;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-wrapper {
+    padding-bottom: 3rem;
+
+    .form {
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      gap: 1rem;
+
+      &__item {
+        font-size: 1rem;
+
+        .item__input {
+          padding-right: 0rem;
+        }
+      }
+
+      button {
+        width: 70px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        bottom: -85px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

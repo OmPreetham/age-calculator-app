@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as *;
+
+.wrapper {
+  max-width: 850px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  background-color: $clr-neutral-white;
+
+  padding: 3.5em;
+
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 12rem;
+
+  box-shadow: 0 0 100px $clr-neutral-off-white;
+
+  margin: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding-inline: 2em;
+    border-bottom-right-radius: 7rem;
+  }
+}

@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as *;
+@use '../core/topography' as *;
+
+@mixin form-item() {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+
+  .item__label {
+    @include font-label-bold;
+  }
+
+  /* Hide the number input arrows */
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    /* Firefox */
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+
+  .item__input {
+    width: 100%;
+
+    border-radius: 0.5rem;
+    border: 1px solid $clr-neutral-light-grey;
+    outline: transparent;
+
+    padding: 0.5rem 0.8rem;
+
+    @include font-input-bold;
+
+    &::placeholder {
+      @include font-placeholder-bold;
+
+      padding-left: 0;
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
+      outline: none;
+      border: 1px solid $clr-primary-purple;
+      caret-color: $clr-primary-purple;
+    }
+  }
+}

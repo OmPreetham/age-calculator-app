@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+@use '../core/topography' as *;
+@use '../components/results-item' as *;
+
+.results {
+  margin-top: 2rem;
+
+  padding-right: 10vw;
+
+  &__item {
+    @include results-item;
+  }
+}

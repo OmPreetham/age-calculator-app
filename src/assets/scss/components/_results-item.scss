@@ -1,0 +1,14 @@
+@use '../abstracts/variables' as *;
+@use '../core/topography' as *;
+
+@mixin results-item() {
+  @include font-results-item-bold;
+
+  margin-top: 0.5rem;
+
+  span {
+    margin-right: 0.3rem;
+
+    @include font-results-answer-bold;
+  }
+}

@@ -1,6 +1,6 @@
 const AgeCalculator = () => {
   return (
-    <main className="wrapper wrapper-center">
+    <main className="wrapper">
       <section className="form-wrapper">
         <form className="form" action="">
           <article className="form__item">
@@ -9,7 +9,10 @@ const AgeCalculator = () => {
             </label>
             <input
               className="item__input"
-              type="text"
+              type="number"
+              inputMode="numeric"
+              min={1}
+              max={2}
               id="day"
               name="day"
               placeholder="dd"
@@ -21,7 +24,10 @@ const AgeCalculator = () => {
             </label>
             <input
               className="item__input"
-              type="text"
+              type="number"
+              inputMode="numeric"
+              min={1}
+              max={2}
               id="month"
               name="month"
               placeholder="mm"
@@ -33,7 +39,10 @@ const AgeCalculator = () => {
             </label>
             <input
               className="item__input"
-              type="text"
+              type="number"
+              inputMode="numeric"
+              min={1}
+              max={4}
               id="year"
               name="year"
               placeholder="yyyy"
@@ -47,15 +56,15 @@ const AgeCalculator = () => {
           </button>
         </form>
       </section>
-      <section className="results results-wrapper">
+      <section className="results">
         <p className="results__item">
-          <span className="results__answer">--</span>years
+          <span className="results__answer">- -</span>years
         </p>
         <p className="results__item">
-          <span className="results__answer">--</span>months
+          <span className="results__answer">- -</span>months
         </p>
         <p className="results__item">
-          <span className="results__answer">--</span>days
+          <span className="results__answer">- -</span>days
         </p>
       </section>
     </main>

@@ -1,1 +1,69 @@
+@use '../abstracts/variables' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@mixin font-label-bold {
+  font-family: $ff-poppins;
+  font-style: normal;
+  font-weight: $fw-700;
+  font-size: $fs-label;
+  line-height: $lh-label;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+  letter-spacing: $ls-label;
+  text-transform: uppercase;
+
+  color: $clr-neutral-smokey-grey;
+}
+
+@mixin font-input-bold {
+  font-family: $ff-poppins;
+  font-style: normal;
+  font-weight: $fw-800;
+  font-size: $fs-input;
+  line-height: $lh-input;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+  letter-spacing: $ls-input;
+  text-transform: uppercase;
+
+  color: $clr-neutral-off-black;
+}
+
+@mixin font-placeholder-bold {
+  font-family: $ff-poppins;
+  font-style: normal;
+  font-weight: $fw-800;
+  font-size: $fs-placeholder;
+  line-height: $lh-placeholder;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+  letter-spacing: $ls-placeholder;
+  text-transform: uppercase;
+
+  color: $clr-neutral-smokey-grey;
+}
+
+@mixin font-results-item-bold {
+  font-family: $ff-poppins;
+  font-style: italic;
+  font-weight: $fw-800;
+  font-size: $fs-results-item;
+  line-height: $lh-results-item;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $clr-neutral-off-black;
+}
+
+@mixin font-results-answer-bold {
+  font-family: $ff-poppins;
+  font-style: italic;
+  font-weight: $fw-800;
+  font-size: $fs-results-item;
+  line-height: $lh-results-item;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $clr-primary-purple;
+}
