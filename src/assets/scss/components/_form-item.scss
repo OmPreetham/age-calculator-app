@@ -57,9 +57,17 @@
 
   .input-error {
     border: 1px solid $clr-primary-light-red;
+
+    &:active,
+    &:focus,
+    &:hover {
+      border: 1px solid $clr-primary-light-red;
+      caret-color: $clr-primary-light-red;
+    }
   }
 
   .label-error {
+    @include font-label-bold;
     color: $clr-primary-light-red;
   }
 
