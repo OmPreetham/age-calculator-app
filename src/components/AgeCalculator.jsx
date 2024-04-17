@@ -117,7 +117,7 @@ const AgeCalculator = () => {
           </article>
           <button type="button">
             <img
-              src="/images/icon-arrow.svg"
+              src="images/icon-arrow.svg"
               alt="Down facing arrow icon for submit"
             />
           </button>
